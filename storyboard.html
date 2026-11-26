@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>悠々整体院 絵コンテ 悩み訴求版 v10</title>
+<style>
+:root{--bg:#f4f2ee;--ink:#1f2328;--mute:#6b6f76;--line:#d9d5cc;--card:#fff;--acc:#1f4e79;--warn:#b3541e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.7}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 60px}
+.eyebrow{font-size:12px;color:var(--mute);margin:0}
+h1{font-size:26px;margin:4px 0 8px}
+.lead{margin:0 0 14px;font-size:14.5px}
+.box{background:#fff;border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:8px;padding:12px 14px;font-size:13.5px;margin-bottom:22px}
+.box ul{margin:4px 0 0;padding-left:1.2em}
+.nav{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 8px}
+.nav a{background:var(--acc);color:#fff;text-decoration:none;border-radius:999px;padding:6px 16px;font-size:13.5px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cut{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.frame{position:relative;aspect-ratio:16/9;background:#22262b;overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:cover;display:block}
+.frame::after{content:"";position:absolute;left:0;right:0;bottom:0;height:44%;background:linear-gradient(to top,rgba(0,0,0,.78),rgba(0,0,0,.45) 45%,rgba(0,0,0,0));pointer-events:none}
+.frame:has(.end)::after,.frame:has(.black)::after{display:none}
+.telop{position:absolute;z-index:2;left:0;right:0;bottom:7%;text-align:center;color:#fff;font-weight:800;font-size:clamp(15px,2.4vw,26px);letter-spacing:.04em;text-shadow:0 0 6px rgba(0,0,0,.9),0 2px 3px rgba(0,0,0,.9);padding:0 4%}
+.telop small{display:block;font-size:.66em;font-weight:700;letter-spacing:.06em;margin-bottom:.15em}
+.telop.g{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-weight:900;letter-spacing:.08em;font-size:clamp(16px,2.7vw,30px)}
+.telop.plate{text-align:left;bottom:8%;padding-left:5%;font-style:italic}
+.telop.plate small{color:#ffd23f;font-style:normal;display:table;background:rgba(0,0,0,.72);padding:.1em .6em;margin-bottom:.3em}
+.black{height:100%;background:#000}
+.sfx{position:absolute;z-index:2;top:10%;left:3%;color:#e3261b;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-weight:900;font-style:italic;font-size:clamp(17px,3.5vw,41px);letter-spacing:.02em;transform:rotate(-5deg);transform-origin:left top;text-shadow:0 0 4px #fff,0 0 4px #fff,2px 2px 0 #fff,-2px -2px 0 #fff,2px -2px 0 #fff,-2px 2px 0 #fff;line-height:1}
+.telop .subl{display:block;font-size:.58em;font-weight:700;letter-spacing:.05em;margin-top:.25em}
+.telop.catch{font-size:clamp(14px,2.2vw,24px);line-height:1.45}
+.telop.g.catch{font-size:clamp(14px,2.3vw,25px)}
+.tag{position:absolute;z-index:2;top:6%;left:4%;color:#fff;font-weight:700;font-size:clamp(9px,1.25vw,14px);letter-spacing:.05em;background:rgba(0,0,0,.6);padding:.3em .8em;border-radius:3px}
+.sfx.ok{color:#0a8f4d}
+.sfx i{font-size:.72em;font-style:inherit;letter-spacing:0}
+.telop .ruby{font-size:.5em;font-style:normal;margin-left:.6em;letter-spacing:.1em}
+.frame:has(.black) .telop{bottom:42%}
+.split{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;height:100%;background:#fff}
+.split img{min-width:0}
+.telop.vs{bottom:auto;top:4%;left:auto;right:5%;width:auto;padding:0;font-size:clamp(16px,2.8vw,32px);color:#ffd23f;font-style:italic}
+.end{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;background:#fbfaf7;color:#1f2328;text-align:center;padding:4%}
+.end.endg{background:#111;color:#fff}
+.end .logo{width:76%;height:auto;object-fit:contain;margin-top:3%}
+.end .name{font-size:clamp(22px,4vw,44px);font-weight:800;letter-spacing:.12em}
+.end .sub{font-size:clamp(11px,1.5vw,17px);margin-top:.6em;line-height:1.8}
+.meta{padding:10px 14px 14px;font-size:13px;flex:1}
+.meta .no{display:inline-block;background:var(--acc);color:#fff;font-weight:700;border-radius:4px;padding:0 8px;margin-right:8px;font-size:12.5px}
+.meta .no .new{background:#ffd23f;color:#1f2328;border-radius:3px;padding:0 4px;margin-left:4px;font-size:11px}
+.meta .sec{color:var(--mute);font-size:12.5px}
+.meta p{margin:6px 0 0}
+.meta .aim{color:var(--mute)}
+h2{font-size:20px;margin:40px 0 6px;border-bottom:2px solid var(--line);padding-bottom:4px}
+h2+p{font-size:14px;margin:0 0 14px}
+a{color:var(--acc);word-break:break-all}
+.tblwrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:8px}
+.tblwrap table{border-collapse:collapse;width:100%;min-width:560px;font-size:13px}
+.tblwrap th,.tblwrap td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.tblwrap th{background:#eef2f6}
+.nav a{word-break:normal}
+ul.n{font-size:13.5px;padding-left:1.2em;margin:0}
+@media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="eyebrow">AI動画 ／ 社内確認用・お客様未提示 ／ 2026-11-25 v10（キャッチコピーを入れた・施術の中身を詳しく・ロゴを作り直し）</p>
+<h1>悠々整体院 絵コンテ「悩み訴求版」</h1>
+<p class="lead">45秒・横型（16:9）。気になるのは、いつも同じ「一瞬」。同じ話を2つの見せ方で作った。</p>
+<div class="nav"><a href="#a">A 実写版</a><a href="#b">B 格闘漫画風</a><a href="#ref">参考にした動画</a><a href="preview_v2/mock_A.mp4">▶ A の動画（45秒）</a><a href="preview_v2/mock_B.mp4">▶ B の動画（45秒）</a></div>
+<div class="box"><b>見る前に</b>
+<ul>
+<li>絵はAIで作った静止画の仮置き。動きはまだ付けていない。文字は画像に焼かず、このページ上で重ねている。</li>
+<li>院内と先生は、ホームページの写真2枚だけを手がかりに描いた。インスタの写真はまだ使っていない。実物の部屋はもっと狭い。</li>
+<li>症状名、「改善」「効く」は使っていない。電話番号と営業時間は未確定なので最後の画面に入れていない。</li>
+<li>B は格闘漫画の「型」だけを借りた自前の絵。特定の漫画の絵柄・キャラクターは使っていない。</li>
+<li>B の「その一瞬」は、整体を受ける前の場面。つらそうな顔は漫画的な誇張で描いた。</li>
+</ul></div>
+
+<h2 id="a">A　実写版</h2>
+<p>3人の「一瞬」→ いろいろ試してきた → それでもまた同じ一瞬 → 悠々整体院では動きから見る → うれしい3人 → ロゴ。</p>
+<div class="grid">
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/C01.jpg" alt="夕方のオフィス。椅子から立つ途中で、片手"><div class="telop ">立ち上がる、その一瞬。</div></div><div class="meta"><span class="no">1</span><span class="sec">0–3秒</span><p>夕方のオフィス。椅子から立つ途中で、片手を腰の後ろに添える。</p><p class="aim">ねらい: 説明なしで「自分のことだ」と思わせる入り。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/T02.jpg" alt="放課後のグラウンド。ボールを握った腕を振"><div class="telop ">投げる、その一瞬。</div></div><div class="meta"><span class="no">2</span><span class="sec">3–6秒</span><p>放課後のグラウンド。ボールを握った腕を振り上げた瞬間。</p><p class="aim">ねらい: スポーツをする子の層。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/T03.jpg" alt="玄関先。買い物袋を両手で持ち上げた瞬間。"><div class="telop ">持ち上げる、その一瞬。</div></div><div class="meta"><span class="no">3</span><span class="sec">6–9秒</span><p>玄関先。買い物袋を両手で持ち上げた瞬間。</p><p class="aim">ねらい: 家のことをする大人の層。</p></div></div>
+<div class="cut"><div class="frame"><div class="split"><img src="mockup_v2/sb/T01.jpg" alt=""><img src="mockup_v2/sb/T02.jpg" alt=""><img src="mockup_v2/sb/T03.jpg" alt=""></div><div class="telop ">気になるのは、いつも同じ瞬間。</div></div><div class="meta"><span class="no">4</span><span class="sec">9–11.5秒</span><p>3人を画面いっぱいに縦3つで並べる。</p><p class="aim">ねらい: 子供から大人まで来る院だと一画面で見せる。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/X05.jpg" alt="別の店でマッサージを受けている会社員。表"><div class="telop ">いろいろ、試してきた。</div></div><div class="meta"><span class="no">5</span><span class="sec">11.5–14.5秒</span><p>別の店でマッサージを受けている会社員。表情はどこか晴れない。</p><p class="aim">ねらい: 「いろいろ試した」を一番伝わる場面で見せる。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/X06.jpg" alt="翌朝の自宅。ソファから立つ途中で、また腰"><div class="telop ">それでも、また同じ一瞬。</div></div><div class="meta"><span class="no">6</span><span class="sec">14.5–17秒</span><p>翌朝の自宅。ソファから立つ途中で、また腰に手がいく。</p><p class="aim">ねらい: 「変わらなかった」を場面の繰り返しで伝える。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/C09.jpg" alt="先生の上半身に、キャッチコピーを2行で出"><div class="telop catch">どこへ行っても改善しなかった不調に、<br>専門的かつ真摯に向き合う</div><div class="tag">整体師・トレーナー（理学療法士）　藤田 悠起</div></div><div class="meta"><span class="no">7</span><span class="sec">17–21秒</span><p>先生の上半身に、キャッチコピーを2行で出す。左上に肩書きと名前。</p><p class="aim">ここが動画の芯。キャッチコピーは受注時の文言そのまま。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/S07.jpg" alt="立って前かがみになる動きを、先生が真横か"><div class="telop ">まず、お話と動きを見る。<span class="subl">丁寧なヒアリングと、動作の評価から始めます</span></div></div><div class="meta"><span class="no">8</span><span class="sec">21–25秒</span><p>立って前かがみになる動きを、先生が真横から見る。体に白い線と点が重なる。</p><p class="aim">施術の中身その1。ホームページ「丁寧なヒアリング」「動作評価」より。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/S08.jpg" alt="うつ伏せの腰に服の上から手を添える。腰か"><div class="telop ">筋膜から、全身のつながりをたどる。<span class="subl">筋膜へのアプローチを中心にした、全身筋膜整体</span></div></div><div class="meta"><span class="no">9</span><span class="sec">25–29秒</span><p>うつ伏せの腰に服の上から手を添える。腰から脚へ光の線が一本つながる。</p><p class="aim">施術の中身その2。ホームページ「筋膜へのアプローチを中心に」「全身筋膜整体」より。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/S09.jpg" alt="野球の子の腕に、先生が両手を添える手元の"><div class="telop ">スポーツのあとの身体にも。<span class="subl">野球・サッカー・陸上などの運動後のメンテナンス</span></div></div><div class="meta"><span class="no">10</span><span class="sec">29–32.5秒</span><p>野球の子の腕に、先生が両手を添える手元の寄り。顔は写さない。</p><p class="aim">施術の中身その3。ホームページ「野球・サッカー・陸上などの運動後のメンテナンス」より。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/S10.jpg" alt="先生と患者さんが並んで、踏み台に足を乗せ"><div class="telop ">身体の使い方まで、一緒に。<span class="subl">筋膜整体とエクササイズを組み合わせたコースも</span></div></div><div class="meta"><span class="no">11</span><span class="sec">32.5–35.5秒</span><p>先生と患者さんが並んで、踏み台に足を乗せる動きを一緒にする。</p><p class="aim">施術の中身その4。ホームページのメニュー「スポーツ筋膜整体＆機能改善を目指すエクササイズ」より。<b>絵の患者さんは冒頭の3人とは別の年配の方。</b></p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/H01.jpg" alt="朝のオフィス。すっと立ち上がって笑顔の会"><div class="telop ">立ち上がる、その一瞬を。</div></div><div class="meta"><span class="no">12</span><span class="sec">35.5–37.5秒</span><p>朝のオフィス。すっと立ち上がって笑顔の会社員。</p><p class="aim">うれしい3人・その1。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/H02.jpg" alt="晴れたグラウンド。気持ちよく投げ終えた笑"><div class="telop ">投げる、その一瞬を。</div></div><div class="meta"><span class="no">13</span><span class="sec">37.5–39.5秒</span><p>晴れたグラウンド。気持ちよく投げ終えた笑顔。</p><p class="aim">うれしい3人・その2。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/H03.jpg" alt="昼間の玄関先。買い物袋を軽々と提げて笑顔"><div class="telop ">持ち上げる、その一瞬を。</div></div><div class="meta"><span class="no">14</span><span class="sec">39.5–41.5秒</span><p>昼間の玄関先。買い物袋を軽々と提げて笑顔。</p><p class="aim">うれしい3人・その3。</p></div></div>
+<div class="cut"><div class="frame"><div class="end"><img class="logo" src="mockup_v2/logo.png" alt="悠々整体院"><div class="sub">福岡県北九州市八幡西区<br>筑豊電気鉄道線 三ヶ森駅から徒歩約6分<br>https://yuuyuuseitaiin.jp/</div></div></div><div class="meta"><span class="no">15</span><span class="sec">41.5–45秒</span><p>最後の画面。ロゴ・地域・最寄駅・ホームページ。</p><p class="aim">電話番号と営業時間は確定後に足す。</p></div></div>
+</div>
+
+<h2 id="b">B　格闘漫画風</h2>
+<p>元のCM（ピップ×刃牙）の流れに合わせた。一人ずつ「紹介 → その一瞬」を3回 → 決めの一言 → 先生の登場 → うれしい3人 → ロゴ。絵柄・キャラクター・名前・擬音はすべて自前。選手の名前は仮のだじゃれ。</p>
+<div class="grid">
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G21.jpg" alt="いきなりデスク。猛烈な速さでキーボードを"><div class="telop g plate"><small>座りっぱなしファイター</small>立野 腰蔵<span class="ruby">たての こしぞう</span></div></div><div class="meta"><span class="no">1</span><span class="sec">0–3秒</span><p>いきなりデスク。猛烈な速さでキーボードを打つ会社員。</p><p class="aim">元のCMと同じく、日常の動きを大げさに描いて名札で紹介する。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G31.jpg" alt="椅子から立つ瞬間、体が固まる。つらそうな"><div class="telop g">立ち上がる、その一瞬。</div><div class="sfx ">ガタ<i>ッッ</i></div></div><div class="meta"><span class="no">2</span><span class="sec">3–6秒</span><p>椅子から立つ瞬間、体が固まる。つらそうな顔と大きな擬音。</p><p class="aim">整体を受ける前の場面。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G02.jpg" alt="夕焼けのグラウンドで振りかぶる中学生。"><div class="telop g plate"><small>放課後投げ込みファイター</small>遠投 振太<span class="ruby">えんとう ふりた</span></div></div><div class="meta"><span class="no">3</span><span class="sec">6–9秒</span><p>夕焼けのグラウンドで振りかぶる中学生。</p><p class="aim">同じ型の2人目。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G33.jpg" alt="腕を上げたまま止まり、肩を押さえる。つら"><div class="telop g">投げる、その一瞬。</div><div class="sfx ">ビュ<i>ッッ</i></div></div><div class="meta"><span class="no">4</span><span class="sec">9–12秒</span><p>腕を上げたまま止まり、肩を押さえる。つらそうな顔。</p><p class="aim"></p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G25.jpg" alt="買い物袋を両手に、商店街を堂々と歩く女性"><div class="telop g plate"><small>買い出し両手ファイター</small>袋田 持子<span class="ruby">ふくろだ もちこ</span></div></div><div class="meta"><span class="no">5</span><span class="sec">12–15秒</span><p>買い物袋を両手に、商店街を堂々と歩く女性。</p><p class="aim">同じ型の3人目。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G35.jpg" alt="玄関で袋を持ち上げた瞬間、中腰で固まる。"><div class="telop g">持ち上げる、その一瞬。</div><div class="sfx ">ズシ<i>ッッ</i></div></div><div class="meta"><span class="no">6</span><span class="sec">15–18秒</span><p>玄関で袋を持ち上げた瞬間、中腰で固まる。つらそうな顔。</p><p class="aim"></p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G12.jpg" alt="別の店でマッサージを受ける会社員。釈然と"><div class="telop g plate"><small>戦歴</small>あらゆる手を、試してきた。</div></div><div class="meta"><span class="no">7</span><span class="sec">18–20秒</span><p>別の店でマッサージを受ける会社員。釈然としない顔。</p><p class="aim">「いろいろ試した」を選手の戦歴として見せる。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G11.jpg" alt="3人の後ろ姿と、前に立つ大きな影。"><div class="telop g">ひとりで、戦わなくていい。</div></div><div class="meta"><span class="no">8</span><span class="sec">20–22秒</span><p>3人の後ろ姿と、前に立つ大きな影。</p><p class="aim">元のCMの決め文句にあたる場所。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G06.jpg" alt="開いた入口の光の中に、先生のシルエット。"><div class="telop g catch">どこへ行っても改善しなかった不調に、<br>専門的かつ真摯に向き合う</div></div><div class="meta"><span class="no">9</span><span class="sec">22–25.5秒</span><p>開いた入口の光の中に、先生のシルエット。キャッチコピーを2行で出す。</p><p class="aim">ここが動画の芯。キャッチコピーは受注時の文言そのまま。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G37.jpg" alt="先生も選手と同じ名札の型で紹介する。アニ"><div class="telop g plate"><small>整体師・トレーナー（理学療法士）</small>藤田 悠起</div></div><div class="meta"><span class="no">10</span><span class="sec">25.5–28秒</span><p>先生も選手と同じ名札の型で紹介する。アニメのキャラクターとして描いた。</p><p class="aim"></p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G38.jpg" alt="立ち上がる会社員の動きを、先生が横から見"><div class="telop g">作戦１　お話と動きを見る。<span class="subl">丁寧なヒアリングと、動作の評価から</span></div></div><div class="meta"><span class="no">11</span><span class="sec">28–31.5秒</span><p>立ち上がる会社員の動きを、先生が横から見る。</p><p class="aim">施術の中身その1。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/G09.jpg" alt="服の上から背中に添えた手の寄り。"><div class="telop g">作戦２　筋膜から、全身をたどる。<span class="subl">筋膜へのアプローチを中心にした、全身筋膜整体</span></div></div><div class="meta"><span class="no">12</span><span class="sec">31.5–34.5秒</span><p>服の上から背中に添えた手の寄り。</p><p class="aim">施術の中身その2。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/GH1.jpg" alt="椅子から勢いよく立って胸を張る会社員。"><div class="telop g">立野 腰蔵、余裕。</div><div class="sfx ok">ス<i>ッッ</i></div></div><div class="meta"><span class="no">13</span><span class="sec">34.5–37秒</span><p>椅子から勢いよく立って胸を張る会社員。</p><p class="aim">うれしい3人・その1。元のCMも最後は笑顔で終わる。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/GH2.jpg" alt="腕をぐるぐる回して笑う中学生。"><div class="telop g">遠投 振太、絶好調。</div><div class="sfx ok">グルン<i>ッッ</i></div></div><div class="meta"><span class="no">14</span><span class="sec">37–39秒</span><p>腕をぐるぐる回して笑う中学生。</p><p class="aim">うれしい3人・その2。</p></div></div>
+<div class="cut"><div class="frame"><img src="mockup_v2/sb/GH3.jpg" alt="買い物袋を軽々と掲げて笑う女性。"><div class="telop g">袋田 持子、軽々。</div><div class="sfx ok">ヒョイ<i>ッッ</i></div></div><div class="meta"><span class="no">15</span><span class="sec">39–41秒</span><p>買い物袋を軽々と掲げて笑う女性。</p><p class="aim">うれしい3人・その3。</p></div></div>
+<div class="cut"><div class="frame"><div class="end"><img class="logo" src="mockup_v2/logo.png" alt="悠々整体院"><div class="sub">福岡県北九州市八幡西区<br>筑豊電気鉄道線 三ヶ森駅から徒歩約6分<br>https://yuuyuuseitaiin.jp/</div></div></div><div class="meta"><span class="no">16</span><span class="sec">41–45秒</span><p>最後の画面。ロゴ・地域・最寄駅・ホームページ。</p><p class="aim"></p></div></div>
+</div>
+
+<h2 id="ref">参考にした動画</h2>
+<p>借りたのは構成の型と見せ方だけ。絵柄・キャラクター・コピーは使っていない。薬や湿布のCMにある「効く」という言い方も使っていない。中身はコマで確認し、音声は聞いていない。</p>
+<div class="tblwrap"><table>
+<tr><th>動画とURL</th><th>借りた点</th><th>使った場所</th></tr>
+<tr><td><b>ピップ マグネループMAX×刃牙「最強のコリに終止符を」篇</b><br><a href="https://www.youtube.com/watch?v=RYYHqo-SCr0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=RYYHqo-SCr0</a></td><td>人物を替えて、同じ型で悩みを並べる。選手紹介のように一人ずつ出す。</td><td>A の1〜4番／B の全体の流れ（題名 → 紹介 → その一瞬 → 決めの一言）</td></tr>
+<tr><td><b>アリナミンメディカルゴールド「つらさが痛みにまできたら」篇</b><br><a href="https://www.youtube.com/watch?v=kCxQy2ktAyw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=kCxQy2ktAyw</a></td><td>短い言葉を一つずつ畳みかける。</td><td>A の1〜3番の文字（立ち上がる・投げる・持ち上げる）</td></tr>
+<tr><td><b>ボルタレン「腰の痛みに、直接効く！」篇</b><br><a href="https://www.youtube.com/watch?v=HnoBgrVrfRw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=HnoBgrVrfRw</a></td><td>日常の動きの一瞬を切り取って見せる。</td><td>A の1〜3番・6番。母親と子どもの場面なので、お客様には見せない</td></tr>
+<tr><td><b>キングジム #おねがいテプラ「肩こり」編</b><br><a href="https://www.youtube.com/watch?v=XUQZLFNUgSY" target="_blank" rel="noopener">https://www.youtube.com/watch?v=XUQZLFNUgSY</a></td><td>悩んでいる人の声から始める。</td><td>A の5番「いろいろ、試してきた。」</td></tr>
+<tr><td><b>Agre 10代の本気エール「那覇高校女子バスケットボール部」篇</b><br><a href="https://www.youtube.com/watch?v=IaG6p3_WUi0" target="_blank" rel="noopener">https://www.youtube.com/watch?v=IaG6p3_WUi0</a></td><td>同じ言い回しを3回重ねる。体をケアする手元の画。</td><td>A の1〜3番の繰り返し／9番の手元の寄り</td></tr>
+<tr><td><b>小林製薬 肩ホットン「重づらい肩こり 冬」篇</b><br><a href="https://www.youtube.com/watch?v=Wsox720cnD4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=Wsox720cnD4</a></td><td>体の感覚を、目に見える物に置き換える。</td><td>A の7・8番の白い線と光の線</td></tr>
+<tr><td><b>イブA錠「腰痛」篇（イタミンズ）</b><br><a href="https://www.youtube.com/watch?v=T35_hC_HQ_s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=T35_hC_HQ_s</a></td><td>悩みを、向き合う「相手」として描く。</td><td>B の9番の黒い影</td></tr>
+<tr><td><b>R-A-D「MEGUMI様 広告動画」（現場で見せた動画）</b><br><a href="https://www.youtube.com/watch?v=3EaWYar3ooo" target="_blank" rel="noopener">https://www.youtube.com/watch?v=3EaWYar3ooo</a></td><td>お客様が「AIに見えないね」と反応した実写の質感。本編は未視聴。</td><td>A の画風</td></tr>
+</table></div>
+
+<h2>決めたいこと</h2>
+<ul class="n">
+<li><b>うれしい3人の場面は、施術の前後を比べる形になる。</b>受注時の共有事項に「ビフォーアフター断定は禁止」とあるので、文字では効果を言い切らず、日常を楽しむ姿として描いた。入れてよいかは鈴木さんの判断を仰ぐ。</li>
+<li>ロゴは作り直したもの。ホームページには小さい画像（横381px）しか無いため、鳥のマークは元をなぞり、文字は明朝体で同じ位置に組み直した。元の書体と完全に同じではない。正式には元データをお客様からもらう。</li>
+<li>A と B のどちらで行くか。B を1本目にするか、2本目以降に回すか。</li>
+<li><b>キャッチコピー「どこへ行っても改善しなかった不調に、専門的かつ真摯に向き合う」を、受注時の文言そのままで入れた。</b>「改善しなかった」は他の店との比較や効果の約束に受け取られる余地があるので、お客様に見せる前に鈴木さんの判断を仰ぐ。</li>
+<li>施術の中身の説明は、ホームページの言葉から取った。「動作の評価」を全員の初回に行うのか、エクササイズを教えるのはどのコースかは、取材で確かめる。</li>
+<li>先生の顔を正面で出すか。出すなら本人の了承と、インスタ・ホームページ写真の利用の了承が要る。</li>
+<li>最後の案内先を一つに決める（ホームページ／LINE／電話）。</li>
+</ul>
+</div>
+</body>
+</html>
